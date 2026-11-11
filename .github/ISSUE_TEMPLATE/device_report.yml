@@ -1,0 +1,68 @@
+name: Device report
+description: Tell us how a Matter device works with the bridge
+labels: [device-report]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Reports for devices that work are as useful as reports for devices that do not.
+        Do not include pairing codes or node data that identifies your home.
+  - type: input
+    id: device
+    attributes:
+      label: Brand and model
+      placeholder: Brand X smart switch 2-gang, model ABC-123
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: Firmware version
+  - type: dropdown
+    id: type
+    attributes:
+      label: Matter device type
+      options:
+        - On/off light, switch or plug
+        - Dimmable light
+        - Colour temperature or colour light
+        - Thermostat / air conditioner
+        - Fan
+        - Occupancy / motion sensor
+        - Contact sensor
+        - Temperature / humidity / light sensor
+        - Door lock
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: network
+    attributes:
+      label: Network
+      options:
+        - Wi-Fi
+        - Thread
+        - Ethernet
+    validations:
+      required: true
+  - type: input
+    id: ecosystem
+    attributes:
+      label: Shared from (multi-admin)
+      placeholder: Apple Home / Google Home / other / commissioned directly
+  - type: textarea
+    id: works
+    attributes:
+      label: What works
+      description: Channels and KNX functions you tested, for example light.N.on, hvac.N.setpoint, fan stages.
+    validations:
+      required: true
+  - type: textarea
+    id: issues
+    attributes:
+      label: What does not work
+  - type: input
+    id: env
+    attributes:
+      label: Bridge version, host and KNX client
+      placeholder: 0.1.0 on Raspberry Pi 5, visualisation X via tunnelling

@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+node_modules/
+admin-ui/dist/
+
+# Site specific config (IPs, node IDs, admin password, PIN hash); template is config.example.json
+config.json
+config.json.bak
+config.local.json
+*.env
+
+# Matter / controller data and secrets
+data/
+
+# Admin project data (floors, rooms, assignments, exported GAs) and unlock audit log
+project.json
+project.json.tmp
+unlock-audit.log

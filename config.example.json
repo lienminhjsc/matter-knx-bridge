@@ -1,0 +1,55 @@
+{
+  "matter_server": "ws://127.0.0.1:5580/ws",
+  "pending_timeout_ms": 10000,
+  "command_timeout_ms": 15000,
+  "lights": {
+    "1": { "node_id": 5, "endpoint": 1, "name": "Living room ceiling" },
+    "2": { "node_id": 5, "endpoint": 2, "name": "Living room wall" },
+    "3": { "node_id": 7, "endpoint": 1, "name": "Kitchen dimmer" }
+  },
+  "thermostats": {
+    "1": { "node_id": 4, "endpoint": 1, "name": "Bedroom AC" }
+  },
+  "sensors": {
+    "1": { "node_id": 9, "name": "Hall motion sensor" }
+  },
+  "locks": {
+    "1": { "node_id": 6, "endpoint": 1, "name": "Front door", "unlock_enabled": false }
+  },
+  "knx": {
+    "enabled": true,
+    "host_ip": "192.168.1.50",
+    "friendly_name": "Matter Bridge",
+    "individual_address": "15.15.250",
+    "tunnel_address": "15.15.240",
+    "max_tunnels": 8,
+    "objects": [
+      { "ga": "1/1/1", "dpt": "1.001", "bind": "light.1.on", "dir": "cmd", "name": "Living room ceiling switch" },
+      { "ga": "1/1/2", "dpt": "1.001", "bind": "light.1.on", "dir": "fb", "name": "Living room ceiling status" },
+      { "ga": "1/1/3", "dpt": "1.001", "bind": "light.2.on", "dir": "cmd", "name": "Living room wall switch" },
+      { "ga": "1/1/4", "dpt": "1.001", "bind": "light.2.on", "dir": "fb", "name": "Living room wall status" },
+      { "ga": "1/2/1", "dpt": "5.001", "bind": "light.3.level", "dir": "cmd", "name": "Kitchen dimmer value" },
+      { "ga": "1/2/2", "dpt": "5.001", "bind": "light.3.level", "dir": "fb", "name": "Kitchen dimmer status" },
+      { "ga": "4/1/1", "dpt": "1.001", "bind": "hvac.1.on", "dir": "cmd", "name": "Bedroom AC on/off" },
+      { "ga": "4/1/2", "dpt": "1.001", "bind": "hvac.1.on", "dir": "fb", "name": "Bedroom AC on/off status" },
+      { "ga": "4/1/3", "dpt": "9.001", "bind": "hvac.1.setpoint", "dir": "cmd", "name": "Bedroom AC setpoint" },
+      { "ga": "4/1/4", "dpt": "9.001", "bind": "hvac.1.setpoint", "dir": "fb", "name": "Bedroom AC setpoint status" },
+      { "ga": "4/1/5", "dpt": "9.001", "bind": "hvac.1.temperature", "dir": "fb", "name": "Bedroom AC room temperature" },
+      { "ga": "4/1/6", "dpt": "20.105", "bind": "hvac.1.mode", "dir": "cmd", "transform": "hvac_mode", "name": "Bedroom AC mode" },
+      { "ga": "4/1/7", "dpt": "20.105", "bind": "hvac.1.mode", "dir": "fb", "transform": "hvac_mode", "name": "Bedroom AC mode status" },
+      { "ga": "4/1/8", "dpt": "5.100", "bind": "hvac.1.fan", "dir": "cmd", "name": "Bedroom AC fan stage" },
+      { "ga": "4/1/9", "dpt": "5.100", "bind": "hvac.1.fan", "dir": "fb", "name": "Bedroom AC fan stage status" },
+      { "ga": "2/1/1", "dpt": "1.018", "bind": "sensor.1.occupancy", "dir": "fb", "name": "Hall occupancy" },
+      { "ga": "6/1/1", "dpt": "1.001", "bind": "lock.1.lock", "dir": "cmd", "name": "Front door lock" },
+      { "ga": "6/1/2", "dpt": "1.001", "bind": "lock.1.locked", "dir": "fb", "name": "Front door locked status" },
+      { "ga": "6/1/3", "dpt": "1.001", "bind": "lock.1.jammed", "dir": "fb", "name": "Front door jammed" }
+    ]
+  },
+  "admin": {
+    "enabled": true,
+    "host": "0.0.0.0",
+    "port": 2401,
+    "project_path": "project.json",
+    "audit_path": "unlock-audit.log"
+  }
+}

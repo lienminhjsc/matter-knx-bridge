@@ -1,0 +1,12 @@
+matter-knx-bridge
+Copyright 2026 Vũ Việt Tùng
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This product depends on and, in the admin web UI build, bundles third-party
+software. See THIRD_PARTY_NOTICES.md for the list of components and their
+licenses.
+
+Matter is a trademark of the Connectivity Standards Alliance. KNX is a
+trademark of KNX Association. Savant is a trademark of its respective owner.
+This project is not affiliated with or endorsed by any of them.

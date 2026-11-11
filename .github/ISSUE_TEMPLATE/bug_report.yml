@@ -1,0 +1,65 @@
+name: Bug report
+description: Something does not work as documented
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Do not paste pairing codes, passwords, PIN hashes, `config.json` secrets or public IP addresses.
+        Security problems go to a private advisory instead (see the link on the new issue page).
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Bridge version or commit
+      placeholder: 0.1.0 / abc1234
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - KNX tunnelling / ETS
+        - Matter / matterjs-server
+        - Admin web app
+        - Door locks
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      description: OS and host (macOS, Raspberry Pi 5...), Node version, matter-server version, KNX client
+      placeholder: macOS 15, Node 22.20, matter-server 1.5.5, ETS 6
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Bridge log
+      description: Relevant lines, ideally with LOG_LEVEL=debug. Remove secrets and public IPs.
+      render: text
+  - type: textarea
+    id: config
+    attributes:
+      label: Relevant configuration
+      description: The slots and knx.objects involved, without the admin section.
+      render: json
