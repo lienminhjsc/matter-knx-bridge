@@ -6,7 +6,7 @@ matter-knx-bridge makes Matter devices (Wi-Fi and Thread) controllable from any 
 
 Devices that already live in Apple Home or Google Home are added through Matter multi-admin with their 11-digit pairing code, so they stay in their original ecosystem as well.
 
-Version 0.1.0. This is a DIY project: read the [disclaimer](#disclaimer) before using it, especially with door locks.
+Version 0.1.0. Maintained by [KNXStore.vn](https://knxstore.vn) and published as is, without warranty: read the [disclaimer](#disclaimer) before using it, especially with door locks.
 
 ## Features
 
@@ -62,7 +62,7 @@ More detail: [docs/en/architecture.md](docs/en/architecture.md).
 ## Quick start
 
 ```sh
-git clone https://github.com/tungvu9x/matter-knx-bridge.git
+git clone https://github.com/lienminhjsc/matter-knx-bridge.git
 cd matter-knx-bridge
 npm ci
 npm run build:admin
@@ -114,9 +114,9 @@ See [SECURITY.md](SECURITY.md) for the threat model and how to report a vulnerab
 
 ## Disclaimer
 
-This is a DIY project published as is, without warranty (see the license). It is not certified by any standards body and has not been tested for safety-critical or life-safety use. You use it at your own risk. Be especially careful with door locks: a configuration mistake or a bug can unlock a door. Keep `unlock_enabled` off unless you have verified the setup on site.
+This project is published as is, without warranty (see the license). It is not certified by any standards body and has not been tested for safety-critical or life-safety use. You use it at your own risk. Be especially careful with door locks: a configuration mistake or a bug can unlock a door. Keep `unlock_enabled` off unless you have verified the setup on site.
 
-matter-knx-bridge talks to Matter devices through matterjs-server and to KNX systems through standard KNXnet/IP tunnelling. It is not affiliated with, endorsed by or certified by the Connectivity Standards Alliance, KNX Association, the Open Home Foundation or Savant. Matter, KNX and Savant are trademarks of their respective owners and are used here only to describe compatibility. No logos of these organisations are used.
+matter-knx-bridge talks to Matter devices through matterjs-server and to KNX systems through standard KNXnet/IP tunnelling. It is not affiliated with, endorsed by or certified by the Connectivity Standards Alliance, KNX Association, the Open Home Foundation or Savant. Matter, KNX, Savant, Apple Home and Google Home are trademarks of their respective owners and are used here only to describe compatibility. No logos of these organisations are used.
 
 ## Contributing
 
@@ -124,4 +124,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.
 
 ## License
 
-Apache License 2.0, see [LICENSE](LICENSE) and [NOTICE](NOTICE). Third-party components: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Copyright 2026 Lien Minh System Integration JSC (KNXStore.vn). Apache License 2.0, see [LICENSE](LICENSE) and [NOTICE](NOTICE). Third-party components: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

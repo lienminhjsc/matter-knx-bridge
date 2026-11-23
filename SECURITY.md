@@ -12,11 +12,11 @@ Only the latest release receives fixes.
 
 Please report vulnerabilities privately through GitHub Security Advisories:
 
-https://github.com/tungvu9x/matter-knx-bridge/security/advisories/new
+https://github.com/lienminhjsc/matter-knx-bridge/security/advisories/new
 
 Do not open a public issue for a vulnerability. Include the version or commit, your setup (OS, Node version, how the bridge is exposed on the network), steps to reproduce and the impact you expect. If the issue involves a door lock, say so in the title.
 
-This is a DIY project maintained in spare time. You will get an acknowledgement as soon as possible, usually within a week. Fixes are released as a new version with a note in [CHANGELOG.md](CHANGELOG.md); reporters are credited unless they ask not to be.
+The project is maintained by the KNXStore.vn team. You will get an acknowledgement as soon as possible, usually within a week. Fixes are released as a new version with a note in [CHANGELOG.md](CHANGELOG.md); reporters are credited unless they ask not to be.
 
 ## Scope
 

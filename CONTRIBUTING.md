@@ -9,7 +9,7 @@ By contributing you agree that your contribution is licensed under the Apache Li
 Requirements: Node.js 22 (>= 22.18, < 23). No other toolchain is needed; Node runs the TypeScript sources directly.
 
 ```sh
-git clone https://github.com/tungvu9x/matter-knx-bridge.git
+git clone https://github.com/lienminhjsc/matter-knx-bridge.git
 cd matter-knx-bridge
 npm ci
 npm test

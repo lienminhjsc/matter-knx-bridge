@@ -4,6 +4,12 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+### Changed
+
+- Repository moved to https://github.com/lienminhjsc/matter-knx-bridge. The project is now maintained by KNXStore.vn; copyright holder is Lien Minh System Integration JSC. The license stays Apache-2.0.
+- Admin UI build tools: Vite 8.3.8 and `@vitejs/plugin-react` 6.3.0 (no change to the bundled runtime code).
+- CI: `actions/checkout` and `actions/setup-node` v7. Dependabot now skips major updates and groups related packages.
+
 ## [0.1.0] - 2026-11-11
 
 Initial public release.
@@ -19,5 +25,5 @@ Initial public release.
 - Door lock safety: unlocking over KNX off by default per lock, dashboard proxy blocks DoorLock commands except lock, admin unlock with a separate 6-digit PIN (scrypt hash, lockout after 5 wrong tries, audit log), `npm run set-unlock-pin`.
 - Mock test suite (`npm test`) for bridge core, KNX layer and admin API.
 
-[Unreleased]: https://github.com/tungvu9x/matter-knx-bridge/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/tungvu9x/matter-knx-bridge/releases/tag/v0.1.0
+[Unreleased]: https://github.com/lienminhjsc/matter-knx-bridge/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/lienminhjsc/matter-knx-bridge/releases/tag/v0.1.0

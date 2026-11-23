@@ -12,9 +12,9 @@ It applies in all project spaces (issues, pull requests, discussions, reviews) a
 
 ## Reporting
 
-Report unacceptable behaviour to the maintainer through GitHub:
+Report unacceptable behaviour to the maintainers (KNXStore.vn team) through GitHub:
 
-- for something that should not be discussed in public, use a private report via https://github.com/tungvu9x/matter-knx-bridge/security/advisories/new and start the title with "Code of conduct", or contact the maintainer through the GitHub profile https://github.com/tungvu9x;
+- for something that should not be discussed in public, use a private report via https://github.com/lienminhjsc/matter-knx-bridge/security/advisories/new and start the title with "Code of conduct";
 - otherwise, open an issue.
 
-Reports are handled confidentially. The maintainer decides on consequences following the enforcement guidelines of the Contributor Covenant 2.1.
+Reports are handled confidentially. The maintainers decide on consequences following the enforcement guidelines of the Contributor Covenant 2.1.

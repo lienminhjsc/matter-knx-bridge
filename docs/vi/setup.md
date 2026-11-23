@@ -39,7 +39,7 @@ Raspberry Pi: cài Node 22 bằng cách nào cũng được, miễn là bản 22
 ## 3. Lấy mã nguồn
 
 ```sh
-git clone https://github.com/tungvu9x/matter-knx-bridge.git
+git clone https://github.com/lienminhjsc/matter-knx-bridge.git
 cd matter-knx-bridge
 npm ci                 # cài matter-server và đúng phiên bản trong package-lock.json
 npm run build:admin    # build giao diện admin vào admin-ui/dist/
@@ -150,7 +150,7 @@ Dưới đây là cách bố trí mẫu, chưa kiểm chứng trên Pi 5. Chỉn
 
 ```sh
 sudo useradd --system --create-home --home-dir /opt/matter-knx-bridge matterknx
-sudo -u matterknx git clone https://github.com/tungvu9x/matter-knx-bridge.git /opt/matter-knx-bridge/app
+sudo -u matterknx git clone https://github.com/lienminhjsc/matter-knx-bridge.git /opt/matter-knx-bridge/app
 cd /opt/matter-knx-bridge/app
 sudo -u matterknx npm ci
 sudo -u matterknx npm run build:admin

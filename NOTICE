@@ -1,5 +1,6 @@
 matter-knx-bridge
-Copyright 2026 Vũ Việt Tùng
+Copyright 2026 Lien Minh System Integration JSC (Công ty Cổ phần Tích hợp Hệ thống Liên Minh),
+KNXStore.vn, https://knxstore.vn
 
 This product is licensed under the Apache License, Version 2.0 (see LICENSE).
 
@@ -9,4 +10,6 @@ licenses.
 
 Matter is a trademark of the Connectivity Standards Alliance. KNX is a
 trademark of KNX Association. Savant is a trademark of its respective owner.
-This project is not affiliated with or endorsed by any of them.
+Apple Home, HomePod and Apple TV are trademarks of Apple Inc. Google Home and
+Google Nest are trademarks of Google LLC. This project is not affiliated with
+or endorsed by any of them.
