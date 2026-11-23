@@ -38,6 +38,8 @@ Chi tiết: [docs/vi/architecture.md](docs/vi/architecture.md).
 
 ## Trạng thái
 
+Một dòng chỉ chuyển sang "Đã kiểm chứng" khi có report thử nghiệm thực tế đã chốt làm căn cứ, xem [docs/field-tests](docs/field-tests/README.md).
+
 | Hạng mục | Trạng thái |
 |---|---|
 | Công tắc on/off Thread (multi-admin từ Apple Home) | Phía Matter đã kiểm chứng trên thiết bị thật, qua một front end không phải KNX trước đây của cùng lõi bridge; đọc phản hồi qua KNX tunnel đã kiểm chứng; lệnh qua KNX cần kiểm chứng |

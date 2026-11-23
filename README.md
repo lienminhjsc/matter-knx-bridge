@@ -38,6 +38,8 @@ More detail: [docs/en/architecture.md](docs/en/architecture.md).
 
 ## Status
 
+Rows move to "Verified" only with a closed field test report as evidence, see [docs/field-tests](docs/field-tests/README.md).
+
 | Area | Status |
 |---|---|
 | Thread on/off switch (multi-admin from Apple Home) | Matter side verified on real hardware, through an earlier non-KNX front end of the same bridge core; KNX feedback read over a tunnel verified; KNX commands to be verified |
