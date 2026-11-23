@@ -6,7 +6,7 @@ matter-knx-bridge cho phép điều khiển thiết bị Matter (Wi-Fi và Threa
 
 Thiết bị đang có trong Apple Home hoặc Google Home được thêm vào qua Matter multi-admin bằng mã ghép nối 11 số, nên vẫn giữ nguyên trong hệ sinh thái ban đầu.
 
-Phiên bản 0.1.0. Đây là dự án DIY: đọc [tuyên bố miễn trừ](#tuyên-bố-miễn-trừ) trước khi dùng, nhất là với khoá cửa.
+Phiên bản 0.1.0. Do [KNXStore.vn](https://knxstore.vn) duy trì, phát hành nguyên trạng, không bảo hành: đọc [tuyên bố miễn trừ](#tuyên-bố-miễn-trừ) trước khi dùng, nhất là với khoá cửa.
 
 ## Tính năng
 
@@ -62,7 +62,7 @@ Chi tiết: [docs/vi/architecture.md](docs/vi/architecture.md).
 ## Bắt đầu nhanh
 
 ```sh
-git clone https://github.com/tungvu9x/matter-knx-bridge.git
+git clone https://github.com/lienminhjsc/matter-knx-bridge.git
 cd matter-knx-bridge
 npm ci
 npm run build:admin
@@ -114,9 +114,9 @@ Xem [SECURITY.md](SECURITY.md) về mô hình đe doạ và cách báo lỗ hổ
 
 ## Tuyên bố miễn trừ
 
-Đây là dự án DIY, phát hành nguyên trạng, không bảo hành (xem license). Dự án không được tổ chức tiêu chuẩn nào chứng nhận và chưa được thử cho ứng dụng an toàn hay an ninh sinh mạng. Bạn tự chịu rủi ro khi sử dụng. Đặc biệt cẩn thận với khoá cửa: một lỗi cấu hình hoặc lỗi phần mềm có thể làm mở cửa. Giữ `unlock_enabled` ở trạng thái tắt cho tới khi đã kiểm chứng tại công trình.
+Dự án được phát hành nguyên trạng, không bảo hành (xem license). Dự án không được tổ chức tiêu chuẩn nào chứng nhận và chưa được thử cho ứng dụng an toàn hay an ninh sinh mạng. Bạn tự chịu rủi ro khi sử dụng. Đặc biệt cẩn thận với khoá cửa: một lỗi cấu hình hoặc lỗi phần mềm có thể làm mở cửa. Giữ `unlock_enabled` ở trạng thái tắt cho tới khi đã kiểm chứng tại công trình.
 
-matter-knx-bridge giao tiếp với thiết bị Matter qua matterjs-server và với hệ KNX qua KNXnet/IP tunnelling chuẩn. Dự án không liên kết, không được bảo trợ hay chứng nhận bởi Connectivity Standards Alliance, KNX Association, Open Home Foundation hay Savant. Matter, KNX và Savant là nhãn hiệu của chủ sở hữu tương ứng, chỉ được nhắc tới để mô tả khả năng tương thích. Dự án không dùng logo của các tổ chức này.
+matter-knx-bridge giao tiếp với thiết bị Matter qua matterjs-server và với hệ KNX qua KNXnet/IP tunnelling chuẩn. Dự án không liên kết, không được bảo trợ hay chứng nhận bởi Connectivity Standards Alliance, KNX Association, Open Home Foundation hay Savant. Matter, KNX, Savant, Apple Home và Google Home là nhãn hiệu của chủ sở hữu tương ứng, chỉ được nhắc tới để mô tả khả năng tương thích. Dự án không dùng logo của các tổ chức này.
 
 ## Đóng góp
 
@@ -124,4 +124,4 @@ Xem [CONTRIBUTING.md](CONTRIBUTING.md) và [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.
 
 ## License
 
-Apache License 2.0, xem [LICENSE](LICENSE) và [NOTICE](NOTICE). Thành phần bên thứ ba: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Copyright 2026 Công ty Cổ phần Tích hợp Hệ thống Liên Minh (KNXStore.vn). Apache License 2.0, xem [LICENSE](LICENSE) và [NOTICE](NOTICE). Thành phần bên thứ ba: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

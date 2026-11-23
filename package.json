@@ -4,6 +4,15 @@
   "private": true,
   "description": "Bridge Matter devices (via matterjs-server) to KNX as a KNXnet/IP tunnelling interface, with an admin web app",
   "license": "Apache-2.0",
+  "author": "Lien Minh System Integration JSC (KNXStore.vn) (https://knxstore.vn)",
+  "homepage": "https://github.com/lienminhjsc/matter-knx-bridge#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lienminhjsc/matter-knx-bridge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lienminhjsc/matter-knx-bridge/issues"
+  },
   "type": "module",
   "engines": {
     "node": ">=22.18.0 <23"

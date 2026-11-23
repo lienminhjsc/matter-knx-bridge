@@ -39,7 +39,7 @@ Raspberry Pi: install Node 22 with any method that gives 22.18 or later (for exa
 ## 3. Get the code
 
 ```sh
-git clone https://github.com/tungvu9x/matter-knx-bridge.git
+git clone https://github.com/lienminhjsc/matter-knx-bridge.git
 cd matter-knx-bridge
 npm ci                 # installs matter-server and the exact versions from package-lock.json
 npm run build:admin    # builds the admin UI into admin-ui/dist/
@@ -150,7 +150,7 @@ The following is an example layout, not yet verified on a Pi 5. Adjust user, pat
 
 ```sh
 sudo useradd --system --create-home --home-dir /opt/matter-knx-bridge matterknx
-sudo -u matterknx git clone https://github.com/tungvu9x/matter-knx-bridge.git /opt/matter-knx-bridge/app
+sudo -u matterknx git clone https://github.com/lienminhjsc/matter-knx-bridge.git /opt/matter-knx-bridge/app
 cd /opt/matter-knx-bridge/app
 sudo -u matterknx npm ci
 sudo -u matterknx npm run build:admin
