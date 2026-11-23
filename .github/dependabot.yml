@@ -5,7 +5,25 @@ updates:
     schedule:
       interval: weekly
     open-pull-requests-limit: 5
+    # Chỉ nhận minor/patch. Major update (Node types, TypeScript, React, Vite)
+    # làm thủ công thành việc riêng vì thường kéo theo breaking change.
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+    # Các gói ràng buộc peer dependency với nhau phải lên cùng một PR.
+    groups:
+      react:
+        patterns: ["react", "react-dom", "@types/react", "@types/react-dom"]
+      vite:
+        patterns: ["vite", "@vitejs/*"]
+      matter-server:
+        patterns: ["matter-server", "@matter-server/*"]
+      fontsource:
+        patterns: ["@fontsource/*"]
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: weekly
+    groups:
+      github-actions:
+        patterns: ["*"]
